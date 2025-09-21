@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="first_3d"
+run/main_scene="uid://835qsbctsa13"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"

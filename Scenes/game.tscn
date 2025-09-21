@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://835qsbctsa13"]
+[gd_scene load_steps=2 format=3 uid="uid://835qsbctsa13"]
 
-[node name="Node3D" type="Node3D"]
+[ext_resource type="PackedScene" uid="uid://d4iol02kf4gs5" path="res://Scenes/player.tscn" id="1_ebmjs"]
+
+[node name="game" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ebmjs")]
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1.11111, 0, 0, 0, 1.11111, 0, 0, 0, 1.11111, -22.2222, -13.3333, 33.3333)
+fov = 92.8125
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117, -87, 37)
